@@ -4,9 +4,9 @@
 
 using namespace cv;
 
-int main() {
+int main(int argc, char **argv) {
 	
-	Mat img = imread("image.jpg",1);
+	Mat img = imread(arg[1],1);
 	namedWindow("Original Image",WINDOW_NORMAL);
 	imshow("Original Image",img);
 	waitKey(0);
